@@ -1,0 +1,30 @@
+// 1. Import Bootstrap functions and variables
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+
+
+// 2. Override Bootstrap default theme colors
+$primary: #0074d7; // Custom green
+$secondary: #FF9800; // Custom orange
+$danger: #E53935; // Custom red
+$success: #388E3C; // Custom dark green
+
+// 3. Merge custom colors into Bootstrap's color system (optional)
+$custom-colors: (
+  "tracy-blue1": #0074d7,
+  "tracy-blue2": #5ab3ff
+);
+
+$theme-colors: map-merge(
+  (
+    "primary": $primary,
+    "secondary": $secondary,
+    "danger": $danger,
+    "success": $success
+  ),
+  $custom-colors
+);
+
+
+// 4. Import the full Bootstrap library (now using your custom colors)
+@import "node_modules/bootstrap/scss/bootstrap";
