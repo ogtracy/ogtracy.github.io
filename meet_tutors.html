@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meet Our Tutors</title>
+    <link href="styles.css" rel="stylesheet">
+    <link href="header-styles.css" rel="stylesheet">
+        <style>
+        .tutor {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            border-bottom: 1px solid #ddd;
+        }
+        .tutor .profileimg {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+        .tutor-info {
+            flex: 1;
+        }
+
+        .tutor #linkedin {
+            width: 20px;
+        }
+    </style>
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-PSQD743H9B"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-PSQD743H9B');
+</script>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container ">
+            <a class="navbar-brand bluecolor2 " href="./index.html" >Codex Tutoring</a>
+        </div>
+    </nav>
+    <div class="container py-5">
+        <h2 class="text-center mb-4">Meet Our Tutors</h2>
+        
+        <div class="tutor">
+            <img src="tracy.jpg" alt="Tracy Sassaman" class="profileimg">
+            <div class="tutor-info">
+                <h5>Tracy Sassaman</h5>
+                <p>An experienced software developer with experience at well-known companies like Google and Amazon. Tracy has more than a thousand hours of tutoring experience and is rate 4.9 stars on Wyzant. She loves seeing her students grow in skill and confidence.</p>
+                <b>Experience</b>
+                <ul>
+                    <li>Python, Java, C#, Ruby</li>
+                    <li>Game Development (Minecraft, Roblox, Scratch, Unity)</li>
+                    <li>Web Development (Javascript, HTML, CSS, PHP)</li>
+                </ul>
+                <img id="linkedin" src="linkedin.png" /> <a href="https://www.linkedin.com/in/tracy-sassaman-19708249"  target="_blank">LinkedIn Profile</a>
+            </div>
+        </div>
+ 
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
